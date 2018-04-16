@@ -15,7 +15,7 @@
 
 #define BUFSIZE 1024
 
-#pragma pack(1)
+#pragma pack(push,1)
 typedef struct Packet{
     uint8_t DesMac[6];
     uint8_t SrcMac[6];
@@ -30,7 +30,7 @@ typedef struct Packet{
     uint8_t TarHardAdd[6];
     uint32_t TarIP;
 }P;
-#pragma pack(8)
+#pragma pack(pop)
 
 struct ether_addr my_Mac;
 struct sockaddr_in my_IP;
