@@ -33,7 +33,6 @@ typedef struct Packet{
 #pragma pack(8)
 
 struct ether_addr my_Mac;
-struct ether_addr reply_Mac;
 struct sockaddr_in my_IP;
 uint8_t pub_packet[42] = {0,};
 
